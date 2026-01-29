@@ -15,16 +15,14 @@ Built as part of the **Poq iOS Technical Challenge**.
 
 ---
 
-## Architecture
+## Architecture, Aims & Thoughts
 
-The app follows the **MVVM (Model–View–ViewModel)** architecture.
+The app follows the **MVVM (Model–View–ViewModel)** architecture to maintain a clear separation between UI and business logic, improving readability and testability.
 
-- **View**: UIKit ViewControllers & TableViewCells  
-- **ViewModel**: Business logic and state handling  
-- **Model**: Repository data models  
-- **Networking**: Centralized APIService using `URLSession`  
+The primary aim was to build a **clean, reliable, and easy-to-maintain** solution using core iOS frameworks.  
+Native tools such as `URLSession` and `NWPathMonitor` were preferred over third-party libraries to keep the project lightweight and transparent.
 
-This approach keeps the code modular, testable, and easy to maintain.
+Special attention was given to handling edge cases like offline usage, empty data sets, and API failures to ensure a smooth user experience.
 
 ---
 
@@ -97,14 +95,6 @@ No third-party libraries were used.
    ```
    ⌘ + U
    ```
-
----
-
-## Notes
-
-- The focus of this project is on **code quality, clarity, and robustness**
-- MVVM was chosen to demonstrate clean separation of concerns and testability
-- Edge cases such as offline refresh and empty data sets are handled gracefully
 
 ---
 
